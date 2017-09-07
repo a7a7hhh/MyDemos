@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:layout_gravity="center_vertical|center_horizontal">
+
+    <include
+        android:id="@+id/iLoading"
+        layout="@layout/univ_place_holder_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/transparent" />
+
+
+    <include
+        android:id="@+id/iEmpty"
+        layout="@layout/univ_place_holder_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/background_primary" />
+
+    <include
+        android:id="@+id/iNetwork"
+        layout="@layout/univ_place_holder_net"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/background_primary" />
+
+    <include
+        android:id="@+id/iError"
+        layout="@layout/univ_place_holder_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/background_primary" />
+
+</FrameLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--placeholder错误标题-->
+    <style name="ErrorTitle">
+        <item name="android:textSize">@dimen/font_normal</item>
+        <item name="android:textColor">@color/font_primary</item>
+    </style>
+    <!--placeholder错误内容-->
+    <style name="ErrorDesc">
+        <item name="android:textSize">@dimen/font_small</item>
+        <item name="android:textColor">@color/font_hint</item>
+    </style>
+
+    <!--微小字体-->
+    <style name="FontTiny">
+        <item name="android:textSize">@dimen/font_tiny</item>
+    </style>
+
+    <style name="FontTiny.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FontTiny.Subject">
+        <item name="android:textColor">@color/subject_color</item>
+    </style>
+
+    <!--小字体-->
+    <style name="FontSmall">
+        <item name="android:textSize">@dimen/font_small</item>
+    </style>
+
+    <style name="FontSmall.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FontSmall.Hint">
+        <item name="android:textColor">@color/font_hint</item>
+    </style>
+
+    <style name="FontSmall.Subject">
+        <item name="android:textColor">@color/subject_color</item>
+    </style>
+
+    <style name="FontSmall.ColorPrimary">
+        <item name="android:textColor">@color/font_primary</item>
+    </style>
+
+    <style name="FontNormal">
+        <item name="android:textSize">@dimen/font_normal</item>
+    </style>
+
+    <style name="FontNormal.ColorPrimary">
+        <item name="android:textColor">@color/font_primary</item>
+    </style>
+
+    <style name="FontNormal.Subject">
+        <item name="android:textColor">@color/subject_color</item>
+    </style>
+    <!--大字体-->
+    <style name="FontLarge">
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <style name="FontLarge.ColorPrimary">
+        <item name="android:textColor">@color/font_primary</item>
+    </style>
+    <!--更大字体-->
+    <style name="FontLarger">
+        <item name="android:textSize">@dimen/font_larger</item>
+    </style>
+
+    <style name="FontLarger.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FontLarger.Subject">
+        <item name="android:textColor">@color/subject_color</item>
+    </style>
+    <!--更大字体-->
+    <style name="FontLargest">
+        <item name="android:textSize">@dimen/font_largest</item>
+    </style>
+
+    <style name="FontLargest.Subject">
+        <item name="android:textColor">@color/subject_color</item>
+    </style>
+    <!--更大大字体-->
+    <style name="FontHuge">
+        <item name="android:textSize">@dimen/font_huge</item>
+    </style>
+
+    <style name="FontHuge.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

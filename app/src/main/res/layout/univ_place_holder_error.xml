@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/ivErrorImage"
+        android:layout_width="@dimen/icon_great"
+        android:layout_height="@dimen/icon_great"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvErrorSceneTips"
+        style="@style/ErrorDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:text="@string/error_scene_tips" />
+
+    <TextView
+        android:id="@+id/tvErrorSolveTips"
+        style="@style/ErrorDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/error_solution_click_retry" />
+
+</LinearLayout>

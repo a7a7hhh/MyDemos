@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 水平间隔线浅色 -->
+    <style name="HorizontalDividerLight">
+        <item name="android:background">@color/divider_light</item>
+    </style>
+
+    <style name="HorizontalDividerLight.Thin">
+        <item name="android:layout_height">@dimen/divider_normal</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- 垂直间隔线浅色 -->
+    <style name="VerticalDividerLight">
+        <item name="android:background">@color/divider_light</item>
+    </style>
+
+    <style name="VerticalDividerLight.Wide">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/spacing_small</item>
+    </style>
+
+    <style name="VerticalDividerLight.Thin">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/divider_normal</item>
+    </style>
+
+    <!-- 水平间隔线深色 -->
+    <style name="HorizontalDividerDark">
+        <item name="android:background">@color/divider_dark</item>
+    </style>
+    <style name="HorizontalDividerDark.Thin">
+        <item name="android:layout_height">@dimen/divider_normal</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!-- 垂直间隔线深色 -->
+    <style name="VerticalDividerDark">
+        <item name="android:background">@color/divider_dark</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/divider_normal</item>
+    </style>
+
+</resources>

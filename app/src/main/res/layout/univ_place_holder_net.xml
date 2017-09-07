@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainBackground"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="@dimen/icon_great"
+        android:layout_height="@dimen/icon_great"
+        android:layout_marginBottom="@dimen/spacing_small"
+        android:scaleType="fitEnd"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <TextView
+        style="@style/ErrorTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_small"
+        android:gravity="bottom|center_horizontal"
+        android:text="网络请求失败" />
+
+    <TextView
+        style="@style/ErrorDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/spacing_large"
+        android:layout_marginTop="@dimen/spacing_tiny"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/error_solution_click_retry" />
+
+
+</LinearLayout>

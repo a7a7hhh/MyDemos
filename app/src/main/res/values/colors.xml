@@ -1,6 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!--基础配色-->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#333333</color>
+    <color name="gray">#999999</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="transparent">#00000000</color>
+
+    <!--主题颜色-->
+    <color name="subject_color">#FF6900</color>
+    <!--标题栏颜色-->
+    <color name="toolbar_primary">@color/subject_color</color>
+    <color name="toolbar_primary_pressed">#3492e9</color>
+    <!--字体颜色-->
+    <color name="font_primary">#323233</color>
+    <color name="font_primary_light">#999696</color>
+    <color name="font_unble">#D1CDCD</color>
+    <color name="font_hint">#999999</color>
+
+    <!--分割线颜色-->
+    <color name="divider_lighter">#E1E1E1</color>
+    <color name="divider_light">#e5e5e5</color>
+    <color name="divider_dark">#999999</color>
+    <color name="divider_category">#b2b2b2</color>
+    <color name="divider_category_tag">#ececec</color>
+
+    <!--主界面颜色-->
+    <color name="background_primary">#ffffff</color>
+
+    <!--个人中心-->
+    <color name="masking">#44000000</color>
 </resources>
