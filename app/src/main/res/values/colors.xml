@@ -15,7 +15,7 @@
     <color name="transparent">#00000000</color>
 
     <!--主题颜色-->
-    <color name="subject_color">#FF6900</color>
+    <color name="subject_color">#22acfb</color>
     <!--标题栏颜色-->
     <color name="toolbar_primary">@color/subject_color</color>
     <color name="toolbar_primary_pressed">#3492e9</color>
@@ -33,7 +33,12 @@
     <color name="divider_category_tag">#ececec</color>
 
     <!--主界面颜色-->
-    <color name="background_primary">#ffffff</color>
+    <color name="background_primary">#f5f5f5</color>
+    <color name="background_white">#ffffff</color>
+    <color name="background_gray">#666666</color>
+    <color name="background_green">#01cd57</color>
+    <color name="background_black">#000000</color>
+    <color name="background_blue">#E7F4FC</color>
 
     <!--个人中心-->
     <color name="masking">#44000000</color>

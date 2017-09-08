@@ -20,7 +20,7 @@ public class ApiManage {
     public ApiService mApiWithToken;
 
     private ApiManage(){
-        mApiService=ApiServiceFactory.getInstance().provideApiService(ApiConfig.HOST);
+        mApiService=ApiServiceFactory.getInstance().provideApiService(ApiConfig.TEST_HOST);
     }
 
     public static ApiManage getInstance(){

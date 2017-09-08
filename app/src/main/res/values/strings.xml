@@ -3,9 +3,17 @@
 
     <string name="error_scene_tips">不好意识哦，出现错误了!</string>
     <string name="error_solution_click_retry">轻触重试</string>
+
     <!--异常-->
     <string name="unknow_message_error">发生未知错误</string>
     <string name="exception_message_generic">应用发生异常</string>
     <string name="exception_message_no_connection">网络连接异常</string>
     <string name="exception_message_host_error">服务器发生异常</string>
+
+    <!--账户-->
+    <string name="login">登录</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="register">现在注册</string>
+    <string name="register_immediatlly">立即注册</string>
+
 </resources>

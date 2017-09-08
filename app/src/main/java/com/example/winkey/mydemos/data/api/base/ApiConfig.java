@@ -8,13 +8,14 @@ package com.example.winkey.mydemos.data.api.base;
 
 public class ApiConfig {
 
-    public static final String HOST = "http://192.168.1.132:5000";
+    //测试服务器
+    public static final String TEST_HOST = "http://dev.flm158.com";
 
     public static final String OSSHOST="";
 
     public static final String TEST_URL="";
 
-    public static final String CLIENT_ID="FLM.Broker.AndroidClient";
+    public static final String CLIENT_ID="FLM.Employee.AndroidClient";
 
     public static final String CLIETN_NAME="房乐美拓展Android客户端";
 

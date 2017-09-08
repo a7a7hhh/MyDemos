@@ -7,12 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
 import com.example.winkey.mydemos.R;
+import com.example.winkey.mydemos.view.activity.account.LoginActivity;
 import com.example.winkey.mydemos.view.fragment.base.BaseFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * Created by Winkey on 2017/9/7.
@@ -21,13 +22,10 @@ import butterknife.ButterKnife;
 public class MainFragment extends BaseFragment {
 
 
-    @BindView(R.id.tv_hello)
-    TextView mTvHello;
-
-    public static MainFragment newInstance() {
-        MainFragment fragment = new MainFragment();
-        return fragment;
-    }
+    @BindView(R.id.tv_login)
+    TextView mTvLogin;
+    @BindView(R.id.tv_mta)
+    TextView mTvMta;
 
     @Nullable
     @Override
@@ -37,6 +35,11 @@ public class MainFragment extends BaseFragment {
         return view;
     }
 
+    public static MainFragment newInstance() {
+        MainFragment fragment = new MainFragment();
+        return fragment;
+    }
+
     @Override
     protected void parsentData() throws Exception {
 
@@ -44,11 +47,17 @@ public class MainFragment extends BaseFragment {
 
     @Override
     protected void initViews(View view) throws Exception {
-        mTvHello.setText("ByeBye world");
     }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
+
+    @OnClick({R.id.tv_login, R.id.tv_mta})
+    public void onViewClicked(View view) {
+        switch (view.getId()) {
+            case R.id.tv_login:
+                LoginActivity.start(getContext());
+                break;
+            case R.id.tv_mta:
+                break;
+        }
     }
 }
