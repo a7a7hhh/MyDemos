@@ -1,28 +1,34 @@
-package com.example.winkey.mydemos.view.activity;
+package com.example.winkey.mydemos.view.activity.mta;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.winkey.mydemos.R;
 import com.example.winkey.mydemos.view.activity.base.BaseActivity;
 import com.example.winkey.mydemos.view.fragment.MainFragment;
+import com.example.winkey.mydemos.view.fragment.mta.MtaFragment;
 
-public class MainActivity extends BaseActivity {
-    private MainFragment mFragment;
+/**
+ * author: Winkey
+ * date: 2017/9/9
+ * describe: TODO
+ */
 
+public class MtaActivity extends BaseActivity {
+
+    private MtaFragment mFragment;
 
     public static void start(Context context){
-        Intent intent=new Intent(context,MainActivity.class);
+        Intent intent=new Intent(context,MtaActivity.class);
         context.startActivity(intent);
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addFragment(R.id.fl_root,mFragment);
-        //setContentView(R.layout.activity_main);
     }
 
     @Override
@@ -32,7 +38,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void parsentData() {
-        mFragment = MainFragment.newInstance();
+        mFragment = MtaFragment.newInstance();
     }
 
     @Override

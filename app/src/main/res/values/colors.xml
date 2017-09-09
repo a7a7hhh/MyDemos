@@ -22,7 +22,7 @@
     <!--字体颜色-->
     <color name="font_primary">#323233</color>
     <color name="font_primary_light">#999696</color>
-    <color name="font_unble">#D1CDCD</color>
+    <color name="font_unable">#D1CDCD</color>
     <color name="font_hint">#999999</color>
 
     <!--分割线颜色-->
