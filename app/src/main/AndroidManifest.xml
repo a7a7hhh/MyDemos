@@ -82,6 +82,7 @@
         <activity android:name=".view.activity.mta.MtaAccountAcitiviy" />
         <activity android:name=".view.activity.mta.MtaActivity" />
         <activity android:name=".view.activity.mta.MtaEventActivity" />
+        <activity android:name=".view.activity.shadow.ShadowActivity" />
 
 
         <meta-data
@@ -93,7 +94,7 @@
 
         <provider
             android:name="com.tencent.mid.api.MidProvider"
-            android:authorities="com.ykx.flm.employee.TENCENT.MID.V3"
+            android:authorities="com.example.winkey.mydemos.TENCENT.MID.V3"
             android:exported="true"></provider>
     </application>
 

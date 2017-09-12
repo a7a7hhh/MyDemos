@@ -10,7 +10,9 @@ import android.widget.TextView;
 import com.example.winkey.mydemos.R;
 import com.example.winkey.mydemos.view.activity.account.LoginActivity;
 import com.example.winkey.mydemos.view.activity.mta.MtaActivity;
+import com.example.winkey.mydemos.view.activity.shadow.ShadowActivity;
 import com.example.winkey.mydemos.view.fragment.base.BaseFragment;
+import com.example.winkey.mydemos.view.fragment.shadow.ShadowFragment;
 import com.tencent.stat.StatService;
 
 import java.util.Properties;
@@ -66,6 +68,7 @@ public class MainFragment extends BaseFragment {
                 MtaActivity.start(getContext());
                 break;
             case R.id.tv_shadow:
+                ShadowActivity.start(getContext());
                 break;
         }
     }
