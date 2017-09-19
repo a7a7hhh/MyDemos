@@ -7,8 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-import com.example.winkey.mydemos.view.widget.recyclerview.SqureLayout;
-
 import java.util.List;
 
 /**

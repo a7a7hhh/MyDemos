@@ -3,6 +3,7 @@ package com.example.winkey.mydemos.data.api.base;
 
 
 import com.example.winkey.mydemos.data.api.ApiService;
+import com.example.winkey.mydemos.data.intercept.TokenInterceptor;
 
 import java.util.concurrent.TimeUnit;
 
@@ -53,7 +54,7 @@ public class ApiServiceFactory {
         OkHttpClient.Builder client = new OkHttpClient.Builder();
         client.connectTimeout(60 * 1000, TimeUnit.MILLISECONDS);
         client.readTimeout(60 * 1000, TimeUnit.MILLISECONDS);
-        //client.addInterceptor(new TokenInterceptor());
+        client.addInterceptor(new TokenInterceptor());
         return client;
     }
 

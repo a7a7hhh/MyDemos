@@ -9,13 +9,11 @@ import android.widget.TextView;
 
 import com.example.winkey.mydemos.R;
 import com.example.winkey.mydemos.view.activity.account.LoginActivity;
+import com.example.winkey.mydemos.view.activity.expression.ExpressionActivity;
 import com.example.winkey.mydemos.view.activity.mta.MtaActivity;
+import com.example.winkey.mydemos.view.activity.recyclerview.RecyclerViewActivity;
 import com.example.winkey.mydemos.view.activity.shadow.ShadowActivity;
 import com.example.winkey.mydemos.view.fragment.base.BaseFragment;
-import com.example.winkey.mydemos.view.fragment.shadow.ShadowFragment;
-import com.tencent.stat.StatService;
-
-import java.util.Properties;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,6 +32,10 @@ public class MainFragment extends BaseFragment {
     TextView mTvMta;
     @BindView(R.id.tv_shadow)
     TextView mTvShadow;
+    @BindView(R.id.tv_recycler_view)
+    TextView mTvRecyclerView;
+    @BindView( R.id.tv_expression_view)
+    TextView mTvExpressionView;
 
     @Nullable
     @Override
@@ -58,7 +60,7 @@ public class MainFragment extends BaseFragment {
     }
 
 
-    @OnClick({R.id.tv_login, R.id.tv_mta,R.id.tv_shadow})
+    @OnClick({R.id.tv_login, R.id.tv_mta, R.id.tv_shadow,R.id.tv_recycler_view,R.id.tv_expression_view})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_login:
@@ -70,7 +72,17 @@ public class MainFragment extends BaseFragment {
             case R.id.tv_shadow:
                 ShadowActivity.start(getContext());
                 break;
+            case R.id.tv_recycler_view:
+                RecyclerViewActivity.start(getContext());
+                break;
+            case R.id.tv_expression_view:
+                ExpressionActivity.start(getContext());
+                break;
         }
     }
 
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+    }
 }

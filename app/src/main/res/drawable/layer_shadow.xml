@@ -9,51 +9,25 @@
     <!--下偏移100dp-->
     <item
         android:id="@+id/bg1"
-        android:top="100dp"
-        android:bottom="5dp"
-        android:width="5dp">
+        android:top="100dp">
         <shape >
 
 
-            <gradient android:startColor="#ff6900"
-                android:endColor="@color/background_white"
-                android:angle="180"/>/>
+            <gradient android:startColor="#ffffff"
+                android:centerColor="@color/subject_color"
+                android:endColor="#ffffff"/>
         </shape>
 
     </item>
     <item
         android:id="@+id/bg2"
-        android:top="100dp"
-        android:left="5dp">
+        android:top="200dp">
         <shape >
-            <solid android:color="@color/background_white"/>
-        </shape>
 
-    </item>
-    <item
-        android:id="@+id/bg3"
-        android:top="100dp"
-        android:width="5dp"
-        android:bottom="5dp"
-        android:gravity="right">
-        <shape >
-            <gradient android:startColor="#ff6900"
-                android:endColor="@color/background_white"/>
-        </shape>
 
-    </item>
-
-    <item
-        android:id="@+id/bg4"
-        android:height="5dp"
-        android:left="5dp"
-        android:right="5dp"
-        android:gravity="bottom">
-        <shape >
-            <gradient android:startColor="#ff6900"
-                android:endColor="@color/background_white"
-                android:angle="270"/>
-
+            <gradient android:startColor="#ffffff"
+                android:endColor="@color/subject_color"
+                android:angle="90"/>
         </shape>
 
     </item>

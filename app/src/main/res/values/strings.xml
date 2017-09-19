@@ -19,12 +19,14 @@
     <string name="register">现在注册</string>
     <string name="register_immediatlly">立即注册</string>
 
-    <!--MainActivity-->
+    <!--Main-->
     <string name="main_login_demo">登录实例</string>
     <string name="main_mta_demo">mta实例</string>
     <string name="main_shadow_demo">阴影图层实例</string>
+    <string name="main_recycler_view_demo">RecyclerView实例</string>
+    <string name="main_expression_demo">表情textview实例</string>
 
-    <!--MtaActivity-->
+    <!--Mta-->
     <string name="mta_account_statistic">账户统计</string>
     <string name="mta_account_statistic_details">点击后，mta账户数新增1个</string>
     <string name="mta_account_statistic_hint">输入需要新增的账户名</string>
@@ -39,4 +41,6 @@
     <string name="mta_visual_event_details">用于MTA中测试可视化埋点（未生效）</string>
 
 
+    <!--RecyclerView-->
+    <string name="recycler_view_xiaomei">小美动态</string>
 </resources>
