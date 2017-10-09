@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.example.winkey.mydemos.R;
 import com.example.winkey.mydemos.view.fragment.base.BaseFragment;
+import com.example.winkey.mydemos.view.utils.Logger;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -43,7 +44,13 @@ public class ExpressionFragment extends BaseFragment {
             char ch1 = str1.charAt(i);
             int codePoint = Character.codePointAt(str1, 1);
         }
-        mTvEmoji.setText("[/满意]\ue31d333");
+        mTvEmoji.setText("[/满意][/吐舌头][/满[/o[/new]]意][/满意][/满意]sfa[/ ？满意]hfh[/喜欢][/喜欢][/喜欢][/喜欢][/喜欢][/喜欢][/喜欢][/喜欢][/喜欢][/喜欢][/喜欢][/喜欢][/喜欢][/喜欢]");
+        mTvEmoji.post(new Runnable() {
+            @Override
+            public void run() {
+                Logger.debug("xwb"+mTvEmoji.getLineCount());
+            }
+        });
     }
 
     @Nullable

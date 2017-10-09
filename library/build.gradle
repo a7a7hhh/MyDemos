@@ -15,6 +15,15 @@ android {
         abortOnError false
     }
 }
+task makeJar(type: Copy) {
+    delete 'build/libs/test.jar'
+    from('build/intermediates/bundles/release/')
+    into('build/libs/')
+    include('classes.jar')
+    rename('classes.jar', 'test.jar')
+}
+
+makeJar.dependsOn(build)
 
 dependencies {
     compile 'com.android.support:support-v4:24.1.1'
