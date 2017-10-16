@@ -25,6 +25,7 @@
     <string name="main_shadow_demo">阴影图层实例</string>
     <string name="main_recycler_view_demo">RecyclerView实例</string>
     <string name="main_expression_demo">表情textview实例</string>
+    <string name="main_ormlite">ormlite数据库实例</string>
 
     <!--Mta-->
     <string name="mta_account_statistic">账户统计</string>
@@ -40,7 +41,11 @@
     <string name="mta_visual_event">可视化埋点事件</string>
     <string name="mta_visual_event_details">用于MTA中测试可视化埋点（未生效）</string>
 
-
+    <!--Ormlite-->
+    <string name="ormlite_add">增加</string>
+    <string name="ormlite_delete">删除</string>
+    <string name="ormlite_upgrade">修改</string>
+    <string name="ormlite_query">查询</string>
     <!--RecyclerView-->
     <string name="recycler_view_xiaomei">小美动态</string>
 </resources>

@@ -4,9 +4,11 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
+import com.example.winkey.mydemos.data.model.vo.UserInfoVO;
 import com.example.winkey.mydemos.view.utils.Logger;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.support.ConnectionSource;
+import com.j256.ormlite.table.TableUtils;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -24,8 +26,8 @@ public class DataBaseHelper extends OrmLiteSqliteOpenHelper {
      * 数据库名字
      *
      */
-    private static final String DATABASE_NAME = "city.db";
-    private static final String DATABASE_PATH = "/data/data/com.ykx.flm.employee/databases/";
+    private static final String DATABASE_NAME = "mydemos.db";
+    private static final String DATABASE_PATH = "/data/data/com.example.winkey.mydemos/databases/";
     /**
      * 数据库配置文件名字
      */
@@ -113,6 +115,7 @@ public class DataBaseHelper extends OrmLiteSqliteOpenHelper {
     public void onCreate(SQLiteDatabase db, ConnectionSource connectionSource) {
         Logger.debug(DataBaseHelper.class.getName(), "onCreate");
         try {
+            TableUtils.createTableIfNotExists(connectionSource, UserInfoVO.class);
         } catch (Exception e) {
             Logger.debug(DataBaseHelper.class.getName(), "Can't create database", e);
             throw new RuntimeException(e);

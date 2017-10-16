@@ -11,6 +11,7 @@ import com.example.winkey.mydemos.R;
 import com.example.winkey.mydemos.view.activity.account.LoginActivity;
 import com.example.winkey.mydemos.view.activity.expression.ExpressionActivity;
 import com.example.winkey.mydemos.view.activity.mta.MtaActivity;
+import com.example.winkey.mydemos.view.activity.ormlite.OrmliteActivity;
 import com.example.winkey.mydemos.view.activity.recyclerview.RecyclerViewActivity;
 import com.example.winkey.mydemos.view.activity.shadow.ShadowActivity;
 import com.example.winkey.mydemos.view.fragment.base.BaseFragment;
@@ -36,6 +37,8 @@ public class MainFragment extends BaseFragment {
     TextView mTvRecyclerView;
     @BindView( R.id.tv_expression_view)
     TextView mTvExpressionView;
+    @BindView( R.id.tv_ormlite)
+    TextView mTvOrmlite;
 
     @Nullable
     @Override
@@ -60,7 +63,7 @@ public class MainFragment extends BaseFragment {
     }
 
 
-    @OnClick({R.id.tv_login, R.id.tv_mta, R.id.tv_shadow,R.id.tv_recycler_view,R.id.tv_expression_view})
+    @OnClick({R.id.tv_login, R.id.tv_mta, R.id.tv_shadow,R.id.tv_recycler_view,R.id.tv_expression_view,R.id.tv_ormlite})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.tv_login:
@@ -77,6 +80,9 @@ public class MainFragment extends BaseFragment {
                 break;
             case R.id.tv_expression_view:
                 ExpressionActivity.start(getContext());
+                break;
+            case R.id.tv_ormlite:
+                OrmliteActivity.start(getContext());
                 break;
         }
     }

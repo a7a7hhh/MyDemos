@@ -62,6 +62,16 @@
             android:text="@string/main_expression_demo"
             android:textColor="@color/font_primary"
             android:textSize="@dimen/font_normal" />
+        <TextView
+            android:id="@+id/tv_ormlite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/main_ormlite"
+            android:textColor="@color/font_primary"
+            android:textSize="@dimen/font_normal" />
 
     </LinearLayout>
 

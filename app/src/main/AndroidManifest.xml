@@ -85,6 +85,11 @@
         <activity android:name=".view.activity.recyclerview.RecyclerViewActivity" />
         <activity android:name=".view.activity.recyclerview.XiaomeiActivity" />
         <activity android:name=".view.activity.expression.ExpressionActivity" />
+        <activity android:name=".view.activity.ormlite.OrmliteActivity" />
+        <activity android:name=".view.activity.ormlite.OrmliteAddActivity" />
+        <activity android:name=".view.activity.ormlite.OrmliteQueryActivity" />
+        <activity android:name=".view.activity.ormlite.OrmliteDeleteActivity" />
+        <activity android:name=".view.activity.ormlite.OrmliteUpdateActivity" />
 
 
         <meta-data
