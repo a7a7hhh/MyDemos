@@ -63,13 +63,33 @@
             android:textColor="@color/font_primary"
             android:textSize="@dimen/font_normal" />
         <TextView
-            android:id="@+id/tv_ormlite"
+        android:id="@+id/tv_ormlite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_button"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/main_ormlite"
+        android:textColor="@color/font_primary"
+        android:textSize="@dimen/font_normal" />
+        <TextView
+            android:id="@+id/tv_date_picker"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/shape_button"
             android:padding="5dp"
             android:layout_marginTop="10dp"
-            android:text="@string/main_ormlite"
+            android:text="@string/main_date_picker"
+            android:textColor="@color/font_primary"
+            android:textSize="@dimen/font_normal" />
+        <TextView
+            android:id="@+id/tv_time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/main_time_picker"
             android:textColor="@color/font_primary"
             android:textSize="@dimen/font_normal" />
 

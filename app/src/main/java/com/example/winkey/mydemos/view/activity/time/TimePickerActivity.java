@@ -1,21 +1,28 @@
-package com.example.winkey.mydemos.view.activity;
+package com.example.winkey.mydemos.view.activity.time;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.winkey.mydemos.App;
 import com.example.winkey.mydemos.R;
 import com.example.winkey.mydemos.view.activity.base.BaseActivity;
-import com.example.winkey.mydemos.view.fragment.MainFragment;
+import com.example.winkey.mydemos.view.activity.ormlite.OrmliteActivity;
+import com.example.winkey.mydemos.view.fragment.ormlite.OrmliteFragment;
+import com.example.winkey.mydemos.view.fragment.time.TimePickerFragment;
 
-public class MainActivity extends BaseActivity {
-    private MainFragment mFragment;
+/**
+ * author: Winkey
+ * date: 2017/12/22.
+ * describe: TODO
+ */
+
+public class TimePickerActivity extends BaseActivity{
+
+    private TimePickerFragment mFragment;
 
 
     public static void start(Context context){
-        Intent intent=new Intent(context,MainActivity.class);
+        Intent intent=new Intent(context,TimePickerActivity.class);
         context.startActivity(intent);
     }
 
@@ -33,7 +40,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void parsentData() {
-        mFragment = MainFragment.newInstance();
+        mFragment = TimePickerFragment.newInstance();
     }
 
     @Override

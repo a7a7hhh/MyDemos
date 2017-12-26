@@ -26,6 +26,8 @@
     <string name="main_recycler_view_demo">RecyclerView实例</string>
     <string name="main_expression_demo">表情textview实例</string>
     <string name="main_ormlite">ormlite数据库实例</string>
+    <string name="main_date_picker">日期选择器</string>
+    <string name="main_time_picker">时间选择器</string>
 
     <!--Mta-->
     <string name="mta_account_statistic">账户统计</string>

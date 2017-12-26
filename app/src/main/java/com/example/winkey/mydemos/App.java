@@ -2,7 +2,14 @@ package com.example.winkey.mydemos;
 
 import android.app.Application;
 
-import com.example.winkey.mydemos.data.api.base.ApiConfig;
+
+import com.example.winkey.mydemos.data.di.component.DaggerMainComponent;
+import com.example.winkey.mydemos.data.di.component.DaggerScopeComponent;
+import com.example.winkey.mydemos.data.di.component.MainComponent;
+import com.example.winkey.mydemos.data.di.module.MainModule;
+import com.example.winkey.mydemos.data.di.module.NetModule;
+import com.example.winkey.mydemos.data.di.component.ScopeComponent;
+import com.example.winkey.mydemos.data.di.module.ScopeModule;
 import com.example.winkey.mydemos.view.utils.ToastUtils;
 import com.tencent.mta.track.StatisticsDataAPI;
 import com.tencent.stat.StatConfig;
@@ -17,6 +24,8 @@ public class App extends Application {
     private static App instance;
 
     public ToastUtils toastUtils;
+    private MainComponent mMainComponent;
+    private ScopeComponent mScopeComponent;
 
     @Override
     public void onCreate() {
@@ -24,7 +33,21 @@ public class App extends Application {
         instance = this;
         toastUtils = new ToastUtils(this);
         initMTA();
+        mMainComponent = DaggerMainComponent.builder()
+                .mainModule(new MainModule(this))
+                .netModule(new NetModule("https://www.flm158.com"))
+                .build();
+        mScopeComponent = DaggerScopeComponent.builder()
+                .scopeModule(new ScopeModule())
+                .build();
         //setupImageLoader();
+    }
+    public MainComponent getMainComponent() {
+        return mMainComponent;
+    }
+
+    public ScopeComponent getScopeComponent() {
+        return mScopeComponent;
     }
 
     public static App getInstance() {

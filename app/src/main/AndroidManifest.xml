@@ -90,6 +90,7 @@
         <activity android:name=".view.activity.ormlite.OrmliteQueryActivity" />
         <activity android:name=".view.activity.ormlite.OrmliteDeleteActivity" />
         <activity android:name=".view.activity.ormlite.OrmliteUpdateActivity" />
+        <activity android:name=".view.activity.time.TimePickerActivity" />
 
 
         <meta-data

@@ -25,4 +25,15 @@
         <attr name="emojiconUseSystemDefault" format="boolean" />
     </declare-styleable>
 
+    <declare-styleable name="NumberPickerView">
+        <attr name="majorTextSize" format="dimension"/>
+        <attr name="minorTextSize" format="dimension"/>
+        <attr name="optionTextSize" format="dimension"/>
+        <attr name="maxValue" format="integer"/>
+        <attr name="minValue" format="integer"/>
+        <attr name="numberPageSize" format="integer"/>
+        <attr name="majorTextColor" format="color"/>
+        <attr name="minorTextColor" format="color"/>
+        <attr name="optionTextColor" format="color"/>
+    </declare-styleable>
 </resources>

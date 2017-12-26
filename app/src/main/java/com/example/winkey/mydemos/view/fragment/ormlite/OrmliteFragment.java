@@ -7,12 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.winkey.mydemos.App;
 import com.example.winkey.mydemos.R;
 import com.example.winkey.mydemos.view.activity.ormlite.OrmliteAddActivity;
 import com.example.winkey.mydemos.view.activity.ormlite.OrmliteDeleteActivity;
 import com.example.winkey.mydemos.view.activity.ormlite.OrmliteQueryActivity;
 import com.example.winkey.mydemos.view.activity.ormlite.OrmliteUpdateActivity;
 import com.example.winkey.mydemos.view.fragment.base.BaseFragment;
+
+import javax.inject.Inject;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -34,11 +37,16 @@ public class OrmliteFragment extends BaseFragment {
     @BindView(R.id.tv_query)
     TextView mTvQuery;
 
+    @Inject
+    String s;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_ormlite, null);
         ButterKnife.bind(this, view);
+
+        App.getInstance().getScopeComponent().inject(this);
         return view;
     }
 
