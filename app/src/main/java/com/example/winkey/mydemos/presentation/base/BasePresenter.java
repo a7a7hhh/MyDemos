@@ -63,12 +63,12 @@ public abstract class BasePresenter implements Presenter {
      *
      * @param msg
      */
-    protected void showErrorView(String msg) {
-        if(loadDataViewList == null){
+    protected void showErrorView(String msg, int errorCode) {
+        if (loadDataViewList == null) {
             return;
         }
         for (LoadDataView loadDataView : loadDataViewList) {
-            loadDataView.showErrorView(msg);
+            loadDataView.showErrorView(msg, errorCode);
         }
     }
 

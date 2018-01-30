@@ -23,7 +23,7 @@ public interface LoadDataView {
     /**
      * 显示错误视图
      */
-    void showErrorView(String message);
+    void showErrorView(String message,int messagecode);
 
     /**
      * 显示空视图

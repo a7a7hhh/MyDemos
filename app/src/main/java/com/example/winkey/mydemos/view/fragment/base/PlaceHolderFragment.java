@@ -60,7 +60,7 @@ public abstract class PlaceHolderFragment extends BaseFragment implements LoadDa
      * @param message
      */
     @Override
-    public void showErrorView(String message) {
+    public void showErrorView(String message, int messagecode) {
         if (placeholder != null)
             placeholder.showErrorView();
     }

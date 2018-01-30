@@ -47,7 +47,7 @@ public abstract class DialogFragment extends BaseFragment implements LoadDataVie
     }
 
     @Override
-    public void showErrorView(String message) {
+    public void showErrorView(String message, int messagecode) {
         showMsg(message);
         if (dialog!=null)
             dialog.setTitle(message);
